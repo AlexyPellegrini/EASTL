@@ -29,7 +29,7 @@ include(CommonCppFlags)
 file(GLOB EASTL_SOURCES "source/*.cpp")
 file(GLOB_RECURSE EASTL_HEADERS "include/EASTL/**.h")
 add_library(EASTL ${EASTL_SOURCES} ${EASTL_HEADERS})
-target_compile_features(EASTL PUBLIC cxx_std_14)
+target_compile_features(EASTL PUBLIC cxx_std_17)
 
 # include both source and headers in the files tab in Visual Studio
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} PREFIX "Header Files" FILES ${EASTL_HEADERS})
@@ -72,8 +72,8 @@ target_include_directories(EASTL PUBLIC include)
 #-------------------------------------------------------------------------------------------
 FetchContent_Declare(
   EABase
-  GIT_REPOSITORY https://github.com/electronicarts/EABase.git
-  GIT_TAG        123363eb82e132c0181ac53e43226d8ee76dea12
+  GIT_REPOSITORY https://github.com/AlexyPellegrini/EABase.git
+  GIT_TAG        wasm
   GIT_SUBMODULES "" # This should be temporary until we update the cyclic submodule dependencies in EABase.
 )
 

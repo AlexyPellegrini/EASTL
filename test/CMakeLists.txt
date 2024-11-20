@@ -76,8 +76,8 @@ target_include_directories(EASTLTest PUBLIC include)
 #-------------------------------------------------------------------------------------------
 FetchContent_Declare(
   EABase
-  GIT_REPOSITORY https://github.com/electronicarts/EABase.git
-  GIT_TAG        123363eb82e132c0181ac53e43226d8ee76dea12
+  GIT_REPOSITORY https://github.com/AlexyPellegrini/EABase.git
+  GIT_TAG        wasm
   GIT_SUBMODULES "" # This should be temporary until we update the cyclic submodule dependencies in EABase.
 )
 FetchContent_MakeAvailable(EABase)
@@ -103,8 +103,8 @@ target_link_libraries(EASTLTest EAStdC)
 
 FetchContent_Declare(
   EAMain
-  GIT_REPOSITORY https://github.com/electronicarts/EAMain.git
-  GIT_TAG        24ca8bf09e6b47b860286fc2f4c832f4009273d1
+  GIT_REPOSITORY https://github.com/AlexyPellegrini/EAMain.git
+  GIT_TAG        wasm
   GIT_SUBMODULES "" # This should be temporary until we update the cyclic submodule dependencies in EAMain.
 )
 FetchContent_MakeAvailable(EAMain)
@@ -121,8 +121,8 @@ target_link_libraries(EASTLTest EATest)
 
 FetchContent_Declare(
   EAThread
-  GIT_REPOSITORY https://github.com/electronicarts/EAThread.git
-  GIT_TAG        f3c6c54d19699639a5edcf5237ea8b71aca6842c
+  GIT_REPOSITORY https://github.com/AlexyPellegrini/EAThread.git
+  GIT_TAG        wasm
   GIT_SUBMODULES "" # This should be temporary until we update the cyclic submodule dependencies in EAThread.
 )
 FetchContent_MakeAvailable(EAThread)
